@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+          >
+        <TableRow
+            android:background="@android:color/black"
+            >
+            <Button
+                android:id="@+id/btnColorRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color 1"
+                android:textColor="@android:color/holo_red_light"
+                >
+            </Button>
+            <Button
+                android:id="@+id/btnColorGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color 2"
+                android:textColor="@android:color/darker_gray"
+                >
+            </Button>
+            <Button
+                android:id="@+id/btnColorBule"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color 2"
+                android:textColor="@android:color/holo_blue_bright"
+                >
+            </Button>
+        </TableRow>
+        <TableRow
+            android:background="@android:color/holo_blue_bright">
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+
+                >
+            </TextView>
+
+        </TableRow>
+        <TableRow
+            android:weightSum="1"
+            android:gravity="right"
+            android:background="@android:color/black"
+            >
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clears"
+                android:textColor="@android:color/holo_blue_bright"
+                >
+            </Button>
+        </TableRow>
+    <TableRow
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        >
+        <TextView
+            android:id="@+id/textview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_span="3"
+            />
+    </TableRow>
+</TableLayout>
+
+
